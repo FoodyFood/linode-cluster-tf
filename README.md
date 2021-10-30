@@ -11,6 +11,7 @@ Take a look in this file to adjust the size, location, or label of the cluster.
 ```bash
 ./environments/foodyfood-prod/foodyfood-prod.tfvars
 ```
+
 <br>
 
 ## Create a linode token
@@ -18,6 +19,7 @@ Take a look in this file to adjust the size, location, or label of the cluster.
 Log into Linode, and create a personal access token
 
 https://cloud.linode.com/profile/tokens
+
 <br>
 
 ## Configure GitHub Workflow Linode Access
