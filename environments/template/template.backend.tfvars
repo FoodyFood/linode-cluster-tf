@@ -1,0 +1,1 @@
+path = "../../environments/template/terraform.tfstate"
