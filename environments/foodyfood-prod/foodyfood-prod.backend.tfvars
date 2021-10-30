@@ -1,1 +1,1 @@
-path = "../../environments/prod/terraform.tfstate"
+path = "../environments/foodyfood-prod/terraform.tfstate"
