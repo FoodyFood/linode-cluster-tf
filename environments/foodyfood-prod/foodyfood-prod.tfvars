@@ -6,7 +6,7 @@ region         = "eu-central"
 tags           = ["foodyfood-prod"]
 pools = [
   {
-    type : "g6-standard-4"
+    type : "g6-standard-2"
     count : 1
   }
 ]
