@@ -11,7 +11,7 @@ variable "k8s_version" {
 
 variable "label" {
   type    = string
-  default = "infra-push-test"
+  default = "foodyfood-test"
 }
 
 variable "region" {
@@ -21,7 +21,7 @@ variable "region" {
 
 variable "tags" {
   type    = list(string)
-  default = ["infra-push-test"]
+  default = ["foodyfood-test"]
 }
 
 variable "pools" {
@@ -41,5 +41,5 @@ variable "pools" {
 variable "prefix" {
   description = "Prefix for linode infra"
   type        = string
-  default     = "infra-push-test"
+  default     = "foodyfood-test"
 }

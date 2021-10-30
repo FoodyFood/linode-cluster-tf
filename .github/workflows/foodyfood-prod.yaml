@@ -27,18 +27,18 @@ jobs:
 
     - name: Terraform Format
       id: fmt
-      run: terraform -chdir="./infra/manifests" fmt -check -recursive
+      run: terraform -chdir="./manifests" fmt -check -recursive
 
     - name: Terraform Init
       id: init
-      run: terraform -chdir="./infra/manifests" init -backend-config="../../environments/foodyfood-prod/foodyfood-prod.backend.tfvars" -reconfigure
+      run: terraform -chdir="./manifests" init -backend-config="../../environments/foodyfood-prod/foodyfood-prod.backend.tfvars" -reconfigure
 
     - name: Terraform Plan
       id: plan
       if: github.event_name == 'pull_request'
       env:
         TF_VAR_linode_api_token: ${{ secrets.LINODE_API_TOKEN }}
-      run: terraform -chdir="./infra/manifests" plan -var-file="../../environments/foodyfood-prod/foodyfood-prod.tfvars" -no-color
+      run: terraform -chdir="./manifests" plan -var-file="../../environments/foodyfood-prod/foodyfood-prod.tfvars" -no-color
       continue-on-error: true
 
     - name: Update Pull Request
@@ -72,7 +72,7 @@ jobs:
       if: github.ref == 'refs/heads/master' && github.event_name == 'push' || github.event_name == 'workflow_dispatch'
       env:
         TF_VAR_linode_api_token: ${{ secrets.LINODE_API_TOKEN }}
-      run: terraform -chdir="./infra/manifests" apply -var-file="../../environments/foodyfood-prod/foodyfood-prod.tfvars" -auto-approve
+      run: terraform -chdir="./manifests" apply -var-file="../../environments/foodyfood-prod/foodyfood-prod.tfvars" -auto-approve
 
     - name: Push tfstate To Repo
       if: github.ref == 'refs/heads/master' && github.event_name == 'push' || github.event_name == 'workflow_dispatch'
