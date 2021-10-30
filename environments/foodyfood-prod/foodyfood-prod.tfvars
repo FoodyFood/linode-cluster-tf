@@ -1,4 +1,4 @@
-enable_cluster = true
+enable_cluster = false
 prefix         = "foodyfood-prod"
 k8s_version    = "1.21"
 label          = "foodyfood-prod"

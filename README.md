@@ -12,6 +12,10 @@ Take a look in this file to adjust the size, location, or label of the cluster.
 ./environments/foodyfood-prod/foodyfood-prod.tfvars
 ```
 
+![cluster-tfvars](/docs/cluster-tfvars.PNG)
+
+Set the enable_cluster to true for the cluster to be created.
+
 Once deployed, changes should be made via pull request. The GitHub workflow has a seperate path for pull requests that will validate and tf plan the change before applying. It's also just good practice to have someone else review infrastructure changes. 
 
 <b>Beware, keep your repository private. Your tfstate file will contain your kube config.</b>
