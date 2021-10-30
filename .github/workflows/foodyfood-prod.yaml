@@ -5,12 +5,12 @@ on:
     branches:
       - master
     paths:
-      - infra/environments/foodyfood-prod/foodyfood-prod.tfvars
+      - environments/foodyfood-prod/foodyfood-prod.tfvars
   pull_request:
     branches:
       - master
     paths:
-      - infra/environments/foodyfood-prod/foodyfood-prod.tfvars
+      - environments/foodyfood-prod/foodyfood-prod.tfvars
 
 jobs:
   terraform:
