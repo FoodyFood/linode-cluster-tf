@@ -12,6 +12,8 @@ Take a look in this file to adjust the size, location, or label of the cluster.
 ./environments/foodyfood-prod/foodyfood-prod.tfvars
 ```
 
+Once deployed, changes should be made via pull request. The GitHub workflow has a seperate path for pull requests that will validate and tf plan the change before applying. It's also just good practice to have someone else review infrastructure changes. 
+
 <br>
 
 ## Create a linode token
