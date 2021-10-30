@@ -1,7 +1,7 @@
 enable_cluster = true
 prefix         = "foodyfood-prod"
 k8s_version    = "1.21"
-label          = "prod"
+label          = "foodyfood-prod"
 region         = "eu-central"
 tags           = ["foodyfood-prod"]
 pools = [
