@@ -1,4 +1,4 @@
-name: infrastructure-foodyfood-prod
+name: infra-foodyfood-prod
 on:
   workflow_dispatch:
   push:
@@ -16,7 +16,7 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    environment: infrastructure
+    environment: infra
 
     steps:
     - name: Checkout
