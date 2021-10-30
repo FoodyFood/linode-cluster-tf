@@ -38,8 +38,6 @@ jobs:
       if: github.event_name == 'pull_request'
       env:
         TF_VAR_linode_api_token: ${{ secrets.LINODE_API_TOKEN }}
-        TF_VAR_godaddy_key: ${{ secrets.GODADDY_KEY }}
-        TF_VAR_godaddy_secret: ${{ secrets.GODADDY_SECRET }}
       run: terraform -chdir="./infra/manifests" plan -var-file="../../environments/foodyfood-prod/foodyfood-prod.tfvars" -no-color
       continue-on-error: true
 
@@ -85,4 +83,4 @@ jobs:
         commit-message: 'Updating tfstate for foodyfood-prod'
         force-add: 'false'
         name: tf-github-action
-        email: d1@outlook.ie
+        email: dx@outlook.ie
