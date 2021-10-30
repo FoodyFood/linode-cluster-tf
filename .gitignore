@@ -1,2 +1,2 @@
 manifests/.terraform/
-manifests/.terraform.lock.hd
+manifests/.terraform.lock.hcl
