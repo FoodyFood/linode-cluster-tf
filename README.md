@@ -59,7 +59,7 @@ This will install the linode provisioner, run the appropriate one for the enviro
 \*\*If you have issues, remove -reconfigure
 
 ```bash
-tf -chdir="./manifests" init -backend-config="../../environments/foodyfood-prod/.backend.tfvars" -reconfigure
+tf -chdir="./manifests" init -backend-config="../environments/foodyfood-prod/foodyfood-prod.backend.tfvars" -reconfigure
 ```
 
 <br>
@@ -69,7 +69,7 @@ tf -chdir="./manifests" init -backend-config="../../environments/foodyfood-prod/
 Running tf plan on a directory will print out all the things that tf is going to create or change, we also save the 'plan' to a tfplan file
 
 ```bash
-tf -chdir="./manifests" plan -var-file="../../environments/foodyfood-prod/.tfvars" -out="../../environments/foodyfood-prod/tfplan"
+tf -chdir="./manifests" plan -var-file="../environments/foodyfood-prod/foodyfood-prod.tfvars" -out="../environments/foodyfood-prod/tfplan"
 ```
 
 <br>
@@ -80,9 +80,9 @@ Running tf apply will start creating infrastructure based on the contents of the
 _DOES NOT CONFIRM BEFORE IT RUNS, CAREFUL, HERE BE DRAGONS_
 
 ```bash
-tf -chdir="./manifests" apply ../../environments/foodyfood-prod/tfplan
+tf -chdir="./manifests" apply ../environments/foodyfood-prod/tfplan
 OR
-tf -chdir="./manifests" apply -var-file="../../environments/foodyfood-prod/.tfvars"
+tf -chdir="./manifests" apply -var-file="../environments/foodyfood-prod/foodyfood-prod.tfvars"
 ```
 
 <br>
@@ -102,7 +102,7 @@ terraform -chdir="./manifests" apply -refresh-only -auto-approve
 Running tf destroy will destroy the infra described in a certain backend file
 
 ```bash
-tf -chdir="./manifests" destroy -var-file="../../environments/foodyfood-prod/.tfvars"
+tf -chdir="./manifests" destroy -var-file="../environments/foodyfood-prod/foodyfood-prod.tfvars"
 ```
 
 ## tf fmt
