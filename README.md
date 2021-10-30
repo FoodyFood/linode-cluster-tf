@@ -15,7 +15,11 @@ Log into Linode, and create a personal access token
 https://cloud.linode.com/profile/tokens
 <br>
 
-## Save the token for TF to use
+## Adding the token to GitHub for GitHub workflows to build your cluster for you
+
+![github-secret](/docs/github-secret.PNG)
+
+## Save the token for TF to use locally
 
 Update a file in the manifestss directory called 'tokens.tf' with this contents:
 
@@ -29,6 +33,7 @@ Update a file in the manifestss directory called 'tokens.tf' with this contents:
 Now when tf runs, it can access linode to do stuff.
 
 <br>
+
 
 ## Initializing TF
 
