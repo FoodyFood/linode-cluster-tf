@@ -1,11 +1,17 @@
-# Personal Cluster On Linode.com
+# Personal Cluster (using terraform) On Linode.com
 
 This repo builds my own personal cluster, if you clone this repo and push it to your account, it will create a GitHub workflow that then builds your cluster.
 
-Manifests is the actual IaC, don't worry too much about it, the main place you want to go is into environments. In here you will see my 'foodyfood-prod' cluster and also a template you can use to make your own.
+The anifests folder is the actual IaC, don't worry too much about it. The main place you want to go is environments. In here you will see my 'foodyfood-prod' cluster and also a template you can use to make your own.
 
 If you run everything as is it will build you a very small cluster of 1 node, 4 vCPU, and 8GB memory.
 
+Take a look in this file to adjust the size, location, or label of the cluster.
+
+```bash
+./environments/foodyfood-prod/foodyfood-prod.tfvars
+```
+<br>
 
 ## Create a linode token
 
