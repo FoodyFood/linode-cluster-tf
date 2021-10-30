@@ -1,23 +1,24 @@
-# Setting up terraform
+# Personal Cluster On Linode.com
 
-## Fetch TF
+This repo builds my own personal cluster, if you clone this repo and push it to your account, it will create a GitHub workflow that then builds your cluster.
 
-Firstly download it and add it to your path variable.
+Manifests is the actual IaC, don't worry too much about it, the main place you want to go is into environments. In here you will see my 'foodyfood-prod' cluster and also a template you can use to make your own.
 
-https://www.terraform.io/downloads.html
+If you run everything as is it will build you a very small cluster of 1 node, 4 vCPU, and 8GB memory.
 
-<br>
 
-## Create a linode token (or get one from the onenote)
+## Create a linode token
 
 Log into Linode, and create a personal access token
 
 https://cloud.linode.com/profile/tokens
 <br>
 
-## Adding the token to GitHub for GitHub workflows to build your cluster for you
+## Configure GitHub Workflow Linode Access
 
 ![github-secret](/docs/github-secret.PNG)
+
+<br>
 
 ## Save the token for TF to use locally
 
@@ -34,6 +35,13 @@ Now when tf runs, it can access linode to do stuff.
 
 <br>
 
+## To Run Locally
+
+Firstly download terraform and add it to your path variable.
+
+https://www.terraform.io/downloads.html
+
+<br>
 
 ## Initializing TF
 
