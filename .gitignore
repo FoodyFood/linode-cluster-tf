@@ -1,1 +1,2 @@
-manifests/clusters/.terraform
+manifests/.terraform/
+manifests/.terraform.lock.hd
