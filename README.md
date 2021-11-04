@@ -22,9 +22,6 @@ Once deployed, changes should be made via pull request. The GitHub workflow has 
 
 <b>Beware, keep your repository private. Your tfstate file will contain your kube config.</b>
 
-<br>
-
-
 ### Repositories In The Series
 
 This series of repositories brings you from creating a cluster through to hsoting code-kitchen yourself as well as anything else you can dream of building in code-kitchen.
