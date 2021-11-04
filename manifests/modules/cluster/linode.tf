@@ -10,6 +10,10 @@ resource "linode_lke_cluster" "cluster" {
     content {
       type  = pool.value["type"]
       count = pool.value["count"]
+      autoscaler {
+        min = 1
+        max = 2
+      }
     }
   }
 

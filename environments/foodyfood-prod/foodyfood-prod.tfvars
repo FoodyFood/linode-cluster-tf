@@ -8,5 +8,7 @@ pools = [
   {
     type : "g6-standard-2"
     count : 1
+    min : 1
+    max : 2
   }
 ]

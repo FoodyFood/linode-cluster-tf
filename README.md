@@ -2,11 +2,13 @@
 
 This repo builds my own personal cluster, if you clone this repo and push it to your account, it will create a GitHub workflow that then builds your cluster.
 
-The anifests folder is the actual IaC, don't worry too much about it. The main place you want to go is environments. In here you will see my 'foodyfood-prod' cluster and also a template you can use to make your own.
+The manifests folder is the actual IaC, don't worry too much about it. The main place you want to go is environments. In here you will see my 'foodyfood-prod' cluster and also a template you can use to make your own.
 
-If you run everything as is it will build you a very small cluster of 1 node, 4 vCPU, and 8GB memory.
+If you run everything as is it will build you a very small cluster of 1 node, 2 vCPU, and 4GB memory.
 
-Take a look in this file to adjust the size, location, or label of the cluster.
+The 'min/max' are for autoscaling, by default the cluster will scale up to a max of 2 nodes when needed.
+
+Take a look in this file to adjust the size, location, min/max nodes, or label (name) of the cluster.
 
 ```bash
 ./environments/foodyfood-prod/foodyfood-prod.tfvars

@@ -25,6 +25,8 @@ variable "pools" {
   type = list(object({
     type  = string
     count = number
+    min   = number
+    max   = number
   }))
 }
 
