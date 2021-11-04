@@ -31,6 +31,7 @@ Configure the cluster: [personal-cluster-base-config](https://github.com/FoodyFo
 Build code-kitchen: [code-kitchen-build](https://github.com/FoodyFood/code-kitchen-build) \
 Deploy code-kitchen to your cluster: [code-kitchen-deploy](https://github.com/FoodyFood/code-kitchen-deploy)
 
+<br> 
 
 ## Create a linode token
 
